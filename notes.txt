@@ -1,0 +1,22 @@
+requirements
+no extra markup
+black transparent box overlay
+big image loads on screen
+click anywhere (image or overlay) and it goes away
+arrows for moving between images
+display image text or captions
+handle different sized images
+images resize to fill the viewport
+respond to updates/orientation to viewport
+respond to scrolling while overlay showing
+
+jquery ready function
+use of anonymous functions
+append
+hide/show
+hover(functionIn,functionOut)
+click
+e.preventDefault
+selecting elements
+fadeIn/fadeOut
+a:eq

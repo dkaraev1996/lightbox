@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 20px;
+  text-align: center;
+  background-image: url(../img/websiteBackground.svg);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 0.5em auto;
+  margin: 1em;
+  color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+  padding: 0.5em 3em 0.5em 3em;
+}
+
+#slideshow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* fixed prevents the image and overlay from scrolling */
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.big {
+  /* translate center method */
+  /* works best when applied to opject itself */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pic {
+  padding: 0;
+}
+
+#lb,
+#rb {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#lb {
+  /* float: left; */
+}
+
+#rb {
+  /* float: right; */
+}
+
+#controls {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* use flex to spread out the buttons that are attached to this object */
+  /* this eliminates the need to use float */
+  display: flex;
+  justify-content: space-between;
+}
+
+#cap {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  font-family: sans-serif;
+  position: absolute;
+  /* text-align: center; */
+  height: 2em;
+  /* use flex to align things both vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  /* border: 1px solid yellow; */
+}
